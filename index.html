@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Life Medical Center</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Healthy Life Medical</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#appointment">Appointment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2 class="your-health">Your Health, Our Priority</h2>
+            <p class="your-health">Providing quality healthcare with experienced doctors and modern facilities.</p>
+            <a href="#appointment" class="btn">Book Appointment</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Healthy Life Medical Center has been serving the community with compassionate care and state-of-the-art medical services. Our mission is to ensure the well-being of our patients with professional expertise.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                  <img class="general-checkup" src="./images/General Checkup.jpeg" alt="">
+                    <h3>General Checkup</h3>
+                    <p>Regular health checkups to monitor your overall health and prevent diseases.</p>
+                </div>
+                <div class="card">
+                  <img class="general-checkup" src="./images/Pediatrics.jpeg" alt="">
+                    <h3>Pediatrics</h3>
+                    <p>Specialized care for children, from newborns to teens, in a friendly environment.</p>
+                </div>
+                <div class="card">
+                  <img class="general-checkup" src="./images/Orthopedics.jpeg" alt="">
+                    <h3>Orthopedics</h3>
+                    <p>Expert care for bones, joints, and muscles to help you move freely again.</p>
+                </div>
+                <div class="card">
+                  <img class="general-checkup" src="./images/Cardiology.jpeg" alt="">
+                    <h3>Cardiology</h3>
+                    <p>Comprehensive heart care services including diagnosis, treatment, and prevention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors">
+        <div class="container">
+            <h2>Meet Our Doctors</h2>
+            <div class="doctor-cards">
+                <div class="doctor-card">
+                    <img src="./images/Dr. John Smith.jpeg" alt="Dr. Smith">
+                    <h3>Dr. John Smith</h3>
+                    <p>General Practitioner</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="./images/Dr. Emily Clark.jpeg" alt="Dr. Emily">
+                    <h3>Dr. Emily Clark</h3>
+                    <p>Pediatrician</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="./images/Dr. Robert Brown.jpeg" alt="Dr. Robert">
+                    <h3>Dr. Robert Brown</h3>
+                    <p>Cardiologist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <input type="text" placeholder="Full Name" name="name" required>
+                <input type="email" placeholder="Email Address" name="email" required>
+                <input type="tel" placeholder="Phone Number" name="phone" required>
+                <input type="date" name="date" required>
+                <select name="doctor" required>
+                    <option value="">Select Doctor</option>
+                    <option value="Dr. John Smith">Dr. John Smith</option>
+                    <option value="Dr. Emily Clark">Dr. Emily Clark</option>
+                    <option value="Dr. Robert Brown">Dr. Robert Brown</option>
+                </select>
+                <textarea placeholder="Additional Message" name="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formMessage"></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@healthylife.com | Phone: +234 801 234 5678</p>
+            <p>Address: 123 Wellness Street, Lagos, Nigeria</p>
+            
+            <!-- Google Maps Embed -->
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.281651791626!2d3.379206075271744!3d6.52437969527337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf37b2a124fcd%3A0x5a3b8b6e1e7f0f9!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1704142239631!5m2!1sen!2sng"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Get Directions Button -->
+            <div class="directions-btn">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=123+Wellness+Street,+Lagos,+Nigeria" target="_blank">Get Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Healthy Life Medical Center. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-buttons">
+        <a href="tel:+2348012345678" class="call-btn" title="Call Now">📞 Call Now</a>
+        <a href="https://wa.me/2348132749023" target="_blank" class="whatsapp-btn" title="Chat on WhatsApp">💬 WhatsApp</a>
+    </div>
+
+    <!-- WhatsApp Chat Widget -->
+    <div id="whatsapp-widget">
+        <div id="whatsapp-header">
+            💬 Chat with us
+            <span id="whatsapp-close">✖</span>
+        </div>
+        <a href="https://wa.me/2348132749023" target="_blank" id="whatsapp-message">
+            Start Chat
+        </a>
+    </div>
+    <div id="whatsapp-float">💬</div>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
